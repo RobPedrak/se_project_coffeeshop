@@ -32,12 +32,12 @@
 .nav__logo {
   width: 105px;
   height: 39px;
-  /* display: flex; */
-  /* position: relative; */
+  position: relative;
+  left: -50px;
 }
 
 .nav__links {
-  margin: 8px 0 0 0;
+  margin: 0;
   display: flex;
   align-items: flex-start;
   column-gap: 20px;
@@ -97,14 +97,21 @@
   margin-top: auto;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   box-sizing: border-box;
 }
 
-.header__paragraph {
+.header__footer-paragraph {
   font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   line-height: 20px;
   color: #838383;
+  margin: 0;
+}
+
+.header__address {
+  margin: 0;
+  color: #838383;
+  align-self: flex-end;
 }
