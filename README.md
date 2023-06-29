@@ -14,3 +14,7 @@ This is the second project of the Web Development program at Practicum. It was c
 ## Plan on improving the project
 
 Add your ideas here :)
+
+Pictures, GIFs, or screenshots detailing project features
+
+<!-- How to add such file types to a README.md -->
