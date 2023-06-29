@@ -17,11 +17,17 @@
   padding: 30px 80px 40px;
   position: relative;
   box-sizing: border-box;
-  /* background-color: #ffffff;
-  background-image: url(images/background_header.svg);
+}
+
+.header__background-image {
+  z-index: -1;
+  /* background-color: #ffffff; */
+  background-image: url(images\background_header.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
+  background-position: center;
+  height: 100%;
+  width: 100%;
 }
 
 .nav {
