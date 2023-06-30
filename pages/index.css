@@ -188,11 +188,14 @@
 }
 
 .recipes__videos-iframes {
-  border: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 40px;
+}
+
+.recipes__iframe {
+  border: 0px;
 }
 
 .recipes__video-caption {
