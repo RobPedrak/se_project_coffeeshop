@@ -231,6 +231,7 @@
 
 .form__fieldset {
   border: none;
+
   padding: 0; /* Override default fieldset padding from normalize.css */
 }
 
