@@ -284,6 +284,7 @@
 }
 
 .form__label-checkbox {
+  margin-bottom: 0;
   display: inline-flex;
   justify-content: center;
 }
