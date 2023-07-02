@@ -223,6 +223,10 @@
 .reservation__title {
   margin-top: 100px;
   margin-bottom: 80px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
 }
 
 .reservation__form {
@@ -239,11 +243,27 @@
 }
 
 .form__label {
+  display: block;
   margin-bottom: 8px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.form__input {
+  height: 60px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
 }
 
 .form__button {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  line-height: 20px;
   border-radius: 4px;
+  height: 60px;
   background-color: #2f80ed;
   color: #fff;
   opacity: 1;
