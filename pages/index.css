@@ -205,3 +205,69 @@
   display: inline-block;
   justify-content: space-between;
 }
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  color: #000;
+
+  background-color: #d9e7ff;
+  background-image: url(../images/background_reservation.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.reservation__title {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.reservation__form {
+  margin-bottom: 120px; /* all other styles to form class */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  max-width: 385px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.form__label {
+  margin-bottom: 8px;
+}
+
+.form__button {
+  border-radius: 4px;
+  background-color: #2f80ed;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.form__button:hover {
+  opacity: 0.7;
+}
+
+.form__label-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form__checkbox {
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+  margin-right: 12px;
+
+  background-color: #2f80ed;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
