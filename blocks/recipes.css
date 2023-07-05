@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 100px 0 215px 80px;
+  padding: 100px 80px 215px;
   color: #fff;
   margin: 0 auto;
 
@@ -60,7 +60,6 @@
 .recipes__video-caption {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   column-gap: 40px;
 }
@@ -70,3 +69,15 @@
   display: inline-block;
   justify-content: space-between;
 }
+
+.__list-divider {
+  flex-grow: 1;
+}
+
+/* <li class="card__list-item">
+Key Lime Pie
+<span class="card__list-divider"></span>
+$3
+</li> */
+
+/* <span class="__list-divider"></span> */
