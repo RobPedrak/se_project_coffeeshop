@@ -26,7 +26,7 @@
   <body>
     <div class="page">
       <header class="header">
-        <!-- Targetable by keyframes, empty div? -->
+        <!-- Targetable by keyframes, ...empty div? -->
         <div class="header__background-image"></div>
         <nav class="nav">
           <img
@@ -148,10 +148,12 @@
             <form class="reservation__form form">
               <fieldset class="form__fieldset">
                 <label class="form__label" for="name">Name *</label>
+                <!-- autocomplete attribute suggested by Chrome dev tools -->
                 <input
                   class="form__input"
                   type="text"
                   id="name"
+                  autocomplete="name"
                   placeholder="Name Surname"
                   required
                 />
@@ -179,6 +181,7 @@
                   class="form__input"
                   type="email"
                   id="email"
+                  autocomplete="email"
                   placeholder="email@email.com"
                   required
                 />
@@ -197,7 +200,47 @@
           </div>
         </section>
 
-        <section class="menu" id="menu"></section>
+        <section class="menu" id="menu">
+          <h2 class="menu__title">Menu</h2>
+          <h3 class="menu__subtitle">
+            We brew coffee from locally roasted, Fairtrade certified beans and
+            use biodegradable cups. All teas from our collection are $2/cup.
+          </h3>
+          <div class="menu__cards">
+            <div class="card">
+              <h4 class="card__title">
+                Filter
+                <ul class="card__list">
+                  <li class="card__list-item">
+                    Regular (12 oz)
+                    <span class="card__list-divider"></span>
+                    $1
+                  </li>
+                  <li class="card__list-item">
+                    Large (16 oz)
+                    <span class="card__list-divider"></span>
+                    $1.25
+                  </li>
+                  <li class="card__list-item">
+                    XL (20 oz)
+                    <span class="card__list-divider"></span>
+                    $1.5
+                  </li>
+                  <li class="card__list-item">
+                    Party-size (24 oz, decaf)
+                    <span class="card__list-divider"></span>
+                    $1.75
+                  </li>
+                  <li class="card__list-item">
+                    Iced Coffee (16 oz)
+                    <span class="card__list-divider"></span>
+                    $1.25
+                  </li>
+                </ul>
+              </h4>
+          </div>
+        </section>
+
         <section class="about" id="about-contacts"></section>
       </main>
       <footer class="footer"></footer>
