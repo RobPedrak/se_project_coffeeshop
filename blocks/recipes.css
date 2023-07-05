@@ -1,3 +1,5 @@
+@import url(../blocks/__list-divider.css);
+
 @keyframes rotaterecipesbackground {
   from {
     transform: rotate(0deg);
@@ -48,7 +50,6 @@
 
 .recipes__videos-iframes {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   column-gap: 40px;
 }
@@ -59,25 +60,14 @@
 
 .recipes__video-caption {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   column-gap: 40px;
+  margin: 24px 140px 0;
+  padding-left: 0; /* Override default padding for ul  */
 }
 
 .recipes__video-caption-aeropress,
 .recipes__video-caption-frenchpress {
-  display: inline-block;
-  justify-content: space-between;
-}
-
-.__list-divider {
   flex-grow: 1;
+  display: inline-block;
 }
-
-/* <li class="card__list-item">
-Key Lime Pie
-<span class="card__list-divider"></span>
-$3
-</li> */
-
-/* <span class="__list-divider"></span> */

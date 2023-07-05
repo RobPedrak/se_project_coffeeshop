@@ -1,3 +1,5 @@
+@import url(../blocks/__list-divider.css);
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -70,6 +72,5 @@
 }
 
 .card__list-divider {
-  flex-grow: 1;
   border-bottom: 1px solid #000;
 }

@@ -28,6 +28,7 @@
   line-height: 30px;
   color: #838383;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .form__button {
@@ -42,6 +43,7 @@
   margin-bottom: 32px;
   opacity: 1;
   transition: opacity 0.5s ease;
+  padding: 0;
 }
 
 .form__button:hover {
@@ -52,6 +54,7 @@
   margin-bottom: 0;
   display: inline-flex;
   justify-content: center;
+  width: 100%;
 }
 
 .form__checkbox {
