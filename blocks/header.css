@@ -24,11 +24,8 @@
   background-position: center;
 }
 
-.header__background-image {
-  animation-name: rotateheaderbackground;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+.header__background-image-animated {
+  animation: rotateheaderbackground 30s linear infinite;
 }
 
 .nav {
@@ -70,6 +67,7 @@
   line-height: 76px;
   font-weight: 500;
   letter-spacing: -0.6px;
+
   margin-top: 183px;
   margin-bottom: 28px;
   max-width: 729px;
@@ -88,7 +86,7 @@
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
-  margin: 0 0 0 0;
+  margin: 0;
   max-width: 683px;
   z-index: 1;
 }
