@@ -56,12 +56,13 @@
   margin-right: 10px;
 }
 
-.footer__column-link {
+.footer__social-link {
   color: white;
   text-decoration: none;
+  transition: color 0.4s ease;
 }
 
-.footer__column-link:hover {
+.footer__social-link:hover {
   color: #c1c1c1;
 }
 
