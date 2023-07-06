@@ -29,30 +29,37 @@
   margin-bottom: 100px;
   align-items: center;
   text-align: center;
+
   font-family: "Noto Serif", "Times New Roman", serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
 }
 
-.card {
+.menu__cards {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
   width: 540px;
-  /* margin gap between cards here? */
+  margin-bottom: 100px;
 }
 
 .card__title {
   margin: 0; /* margin-block-start: 1em; override default stylesheet */
 
+  flex-basis: 100%;
   font-family: "Inter", Arial, sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
-  flex-basis: 100%;
 }
 
 .card__list {
+  width: 100%;
   margin: 32px 0 0; /* margin-block-start (&-end): 1em; override default stylesheet */
   padding-left: 0; /* padding-inline-start: 40px; override default stylesheet */
 }
@@ -60,17 +67,28 @@
 .card__list-item {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 16px;
+
   font-family: "Noto Serif", "Times New Roman", serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 16px;
+}
+
+.card__list-divider {
+  border-bottom: 1px solid #000;
+  margin: 0 10px 4px;
+}
+
+/* In the event of an expanded menu */
+.card:nth-of-type(odd) {
+  margin-right: 100px;
 }
 
 .card__list-item:last-of-type {
   margin-bottom: 0;
 }
 
-.card__list-divider {
-  border-bottom: 1px solid #000;
+.card:last-child {
+  margin: auto auto 0;
 }
