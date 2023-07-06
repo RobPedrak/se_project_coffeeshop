@@ -1,3 +1,5 @@
+@import url(../blocks/nav.css);
+
 @keyframes rotateheaderbackground {
   from {
     transform: rotate(0deg);
@@ -26,40 +28,6 @@
 
 .header__background-image-animated {
   animation: rotateheaderbackground 30s linear infinite;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav__logo {
-  width: 105px;
-  height: 39px;
-  position: relative;
-  left: -50px;
-}
-
-.nav__links {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: flex-start;
-  column-gap: 20px;
-  flex-direction: row;
-  list-style-type: none;
-}
-
-.nav__link {
-  font-family: "Inter", Arial, sans-serif;
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.4s ease;
-}
-
-.nav__link:hover {
-  color: #2f80ed;
 }
 
 .header__title {
