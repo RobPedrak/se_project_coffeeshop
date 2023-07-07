@@ -1,14 +1,3 @@
-@import url(../blocks/nav.css);
-
-@keyframes rotateheaderbackground {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -24,10 +13,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.header__background-image-animated {
-  animation: rotateheaderbackground 30s linear infinite;
 }
 
 .header__title {

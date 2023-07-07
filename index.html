@@ -26,9 +26,6 @@
   <body>
     <div class="page">
       <header class="header">
-        <div
-          class="header__background-image header__background-image-animated"
-        ></div>
         <nav class="nav">
           <img
             src="images/logo_coffeeshop_dark.svg"
@@ -52,9 +49,7 @@
         </nav>
 
         <h1 class="header__title">
-          <span class="header__span-accent">
-            <span>Specialty Coffee</span>
-          </span>
+          <span class="header__span-accent"> Specialty Coffee </span>
           in&nbsp;the&nbsp;Triple&nbsp;Peaks&nbsp;Library
         </h1>
         <p class="header__description">
@@ -85,14 +80,13 @@
 
       <main class="content">
         <section class="recipes" id="recipes">
-          <div class="recipes__background-image"></div>
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
             convenience:
           </p>
-          <div class="recipes__videos">
-            <div class="recipes__videos-iframes">
+          <ul class="recipes__videos">
+            <li class="recipes__videos-iframes">
               <iframe
                 class="recipes__iframe"
                 width="480"
@@ -106,8 +100,8 @@
                 <span>Aeropress recipe</span>
                 <span>~5 min</span>
               </p>
-            </div>
-            <div class="recipes__videos-iframes">
+            </li>
+            <li class="recipes__videos-iframes">
               <iframe
                 class="recipes__iframe"
                 width="480"
@@ -121,66 +115,64 @@
                 <span>French press recipe</span>
                 <span>~15 min</span>
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </section>
 
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
-          <div class="reservation__form form">
-            <form class="form">
-              <fieldset class="form__fieldset">
-                <label class="form__label" for="name">Name *</label>
-                <!-- autocomplete attribute suggested by Chrome dev tools -->
+          <form class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Name *</label>
+              <!-- autocomplete attribute suggested by Chrome dev tools -->
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                autocomplete="name"
+                placeholder="Name Surname"
+                required
+              />
+              <label class="form__label" for="guests-number"
+                >Number of guests *</label
+              >
+              <input
+                class="form__input"
+                type="number"
+                id="guests-number"
+                placeholder="1-8"
+                min="1"
+                max="8"
+                required
+              />
+              <label class="form__label" for="date-time">Date & time *</label>
+              <input
+                class="form__input"
+                type="datetime-local"
+                id="date-time"
+                required
+              />
+              <label class="form__label" for="email">Your email *</label>
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                autocomplete="email"
+                placeholder="email@email.com"
+                required
+              />
+              <button type="submit" class="form__button">Book a table</button>
+              <label for="checkbox" class="form__label form__label-checkbox">
                 <input
-                  class="form__input"
-                  type="text"
-                  id="name"
-                  autocomplete="name"
-                  placeholder="Name Surname"
+                  class="form__checkbox"
+                  type="checkbox"
+                  id="checkbox"
                   required
                 />
-                <label class="form__label" for="guests-number"
-                  >Number of guests *</label
-                >
-                <input
-                  class="form__input"
-                  type="number"
-                  id="guests-number"
-                  placeholder="1-8"
-                  min="1"
-                  max="8"
-                  required
-                />
-                <label class="form__label" for="date-time">Date & time *</label>
-                <input
-                  class="form__input"
-                  type="datetime-local"
-                  id="date-time"
-                  required
-                />
-                <label class="form__label" for="email">Your email *</label>
-                <input
-                  class="form__input"
-                  type="email"
-                  id="email"
-                  autocomplete="email"
-                  placeholder="email@email.com"
-                  required
-                />
-                <button type="submit" class="form__button">Book a table</button>
-                <label for="checkbox" class="form__label form__label-checkbox">
-                  <input
-                    class="form__checkbox"
-                    type="checkbox"
-                    id="checkbox"
-                    required
-                  />
-                  I agree with the terms of use</label
-                >
-              </fieldset>
-            </form>
-          </div>
+                I agree with the terms of use</label
+              >
+            </fieldset>
+          </form>
         </section>
 
         <section class="menu" id="menu">
@@ -306,13 +298,11 @@
 
       <footer class="footer">
         <div class="footer__content">
-          <div class="footer__logo">
-            <img
-              src="images/logo_coffeeshop_light.svg"
-              alt="Coffee Shop Logo White"
-              class="footer__logo"
-            />
-          </div>
+          <img
+            src="images/logo_coffeeshop_light.svg"
+            alt="Coffee Shop Logo White"
+            class="footer__logo"
+          />
           <div class="footer__social">
             <h2 class="footer__social-heading">Social Media</h2>
             <ul class="footer__list">

@@ -1,5 +1,3 @@
-@import url(../blocks/form.css);
-
 .reservation {
   display: flex;
   flex-direction: column;

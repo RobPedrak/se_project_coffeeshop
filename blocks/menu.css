@@ -1,5 +1,3 @@
-@import url(../blocks/card.css);
-
 .menu {
   display: flex;
   flex-direction: column;
