@@ -1,6 +1,6 @@
 .card {
   width: 540px;
-  margin-bottom: 100px;
+  grid-column: span 2;
 }
 
 .card__title {
@@ -29,21 +29,16 @@
   line-height: 20px;
 }
 
+.card:last-child {
+  grid-column: 2 / span 2;
+}
+
 .card__list-divider {
   flex-grow: 1;
   border-bottom: 1px solid #000;
   margin: 0 10px 4px;
 }
 
-/* In the event of an expanded menu */
-.card:nth-of-type(odd) {
-  margin-right: 100px;
-}
-
-.card__list-item:last-of-type {
-  margin-bottom: 0;
-}
-
 .card:last-child {
-  margin: auto auto 0;
+  row-gap: 0;
 }

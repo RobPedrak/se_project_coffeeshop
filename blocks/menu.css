@@ -35,8 +35,12 @@
 }
 
 .menu__cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+
+  /* Adjusting position of grid elements in final row
+     1 Double number of columns in every row
+     2 set each item to span 2 (take up 2 column widths)
+     3 move final column 1 forward */
 }
