@@ -63,14 +63,13 @@
   color: #6f6f6f;
 }
 
-.header__footer-paragraph {
+.header__paragraph {
   font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   line-height: 20px;
   margin: 0;
 }
 
-.header__address {
-  margin: 0;
+.header__paragraph:last-child {
   align-self: flex-end;
 }

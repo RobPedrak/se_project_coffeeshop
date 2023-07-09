@@ -26,11 +26,11 @@
 
   margin-bottom: 32px;
   height: 60px;
-  color: #838383;
   width: 100%;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 20px;
+  border: 1px solid #838383;
 }
 
 .form__button {
