@@ -1,6 +1,5 @@
 .card {
   width: 540px;
-  grid-column: span 2;
 }
 
 .card__title {
@@ -29,16 +28,8 @@
   line-height: 20px;
 }
 
-.card:last-child {
-  grid-column: 2 / span 2;
-}
-
 .card__list-divider {
   flex-grow: 1;
   border-bottom: 1px solid #000;
   margin: 0 10px 4px;
-}
-
-.card:last-child {
-  row-gap: 0;
 }

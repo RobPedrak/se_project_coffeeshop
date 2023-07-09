@@ -39,10 +39,5 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 100px;
 }
-
-/*    Commit: 'Feedback 1 Fixes, pre-display: grid'
-    flex -> grid
-      Commit: 'cards from display: flex to grid'
-    grid -> flex
-      Commit: 'Feedback 2 Fixes, flex + Brief Labels' */
